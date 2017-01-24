@@ -6,10 +6,10 @@
 <body>
 
 	<div id ="root">
-		<label>Hello : </label>
-		<input type="text" name="input" v-model="message">
 
-		<p> The value of the input is: {{ message }} </p>
+		<ul>
+			<li v-for="name in names"> {{ name }} </li>
+		</ul>
 
 	</div>
 
@@ -20,7 +20,7 @@
 			el: '#root',
 
 			data: {
-				message: 'Hello world'
+				names: ['Joe', 'Mary', 'Jane', 'Jack']
 			}
 		});
 
