@@ -24,13 +24,16 @@
 
 			data: {
 				names: ['Joe', 'Mary', 'Jane', 'Jack']
-			}
-		});
+			},
 
-		document.querySelector('#button').addEventListener('click', () => {
-			let name = document.querySelector('#input');
-			myapp.names.push(name.value);
-			name.value = '';
+			mounted(){
+				// alert('ready');
+				document.querySelector('#button').addEventListener('click', () => {
+					let name = document.querySelector('#input');
+					myapp.names.push(name.value);
+					name.value = '';
+				});
+			}
 		});
 
 	</script>
